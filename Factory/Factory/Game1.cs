@@ -9,6 +9,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using Factory.core;
+using TomShane.Neoforce.Controls;
 
 namespace Factory
 {
@@ -19,8 +20,14 @@ namespace Factory
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        //Neoforce Manager
+        private Manager managerGUI;
+
+        //botões
+        Button btEncerrar;
 
         ShipComponent testComponent;
+
 
         public Game1()
         {
@@ -28,6 +35,9 @@ namespace Factory
             Content.RootDirectory = "Content";
             graphics.PreferredBackBufferWidth = 1024;
             graphics.PreferredBackBufferHeight = 768;
+
+            IsMouseVisible = true;
+            managerGUI = new Manager(this, graphics); 
         }
 
         /// <summary>
@@ -39,6 +49,8 @@ namespace Factory
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
+            managerGUI.Initialize();
+
             base.Initialize();
         }
 
@@ -52,6 +64,12 @@ namespace Factory
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             Texture2D tex = Content.Load<Texture2D>(@"structures/cockpit001");
+
+            btEncerrar = new Button(managerGUI);
+            btEncerrar.SetSize(100, 20);
+            btEncerrar.SetPosition(600, 500);
+            btEncerrar.Text = "Encerrar";
+            managerGUI.Add(btEncerrar);
 
             testComponent = new ShipComponent(this, tex);
             testComponent.Initialize();
@@ -77,9 +95,11 @@ namespace Factory
         protected override void Update(GameTime gameTime)
         {
             // Allows the game to exit
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
+            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || btEncerrar.Pushed)
                 this.Exit();
 
+            managerGUI.Update(gameTime);
+            
             // TODO: Add your update logic here
 
             testComponent.Update(gameTime);
@@ -95,6 +115,10 @@ namespace Factory
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
+
+            managerGUI.BeginDraw(gameTime);
+            managerGUI.Draw(gameTime);
+            managerGUI.EndDraw();
             // TODO: Add your drawing code here
             testComponent.myDraw(gameTime, spriteBatch);
 

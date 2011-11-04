@@ -5,3 +5,4 @@ G:\Unidade E\Project1\Factory\Factory\Factory\obj\x86\Debug\Microsoft.Xna.Framew
 G:\Unidade E\Project1\Factory\Factory\Factory\obj\x86\Debug\Factory.exe
 G:\Unidade E\Project1\Factory\Factory\Factory\obj\x86\Debug\Factory.pdb
 G:\Unidade E\Project1\Factory\Factory\Factory\bin\x86\Debug\Content\structures\cockpit001.xnb
+G:\Unidade E\Project1\Factory\Factory\Factory\bin\x86\Debug\TomShane.Neoforce.Controls.dll

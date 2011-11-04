@@ -1,0 +1,8 @@
+G:\Unidade E\Project1\Factory\Factory\Factory\bin\x86\Release\Content\structures\cockpit001.xnb
+G:\Unidade E\Project1\Factory\Factory\Factory\bin\x86\Release\Factory.exe
+G:\Unidade E\Project1\Factory\Factory\Factory\bin\x86\Release\Factory.pdb
+G:\Unidade E\Project1\Factory\Factory\Factory\bin\x86\Release\TomShane.Neoforce.Controls.dll
+G:\Unidade E\Project1\Factory\Factory\Factory\obj\x86\Release\ResolveAssemblyReference.cache
+G:\Unidade E\Project1\Factory\Factory\Factory\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+G:\Unidade E\Project1\Factory\Factory\Factory\obj\x86\Release\Factory.exe
+G:\Unidade E\Project1\Factory\Factory\Factory\obj\x86\Release\Factory.pdb

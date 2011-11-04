@@ -105,6 +105,10 @@
     <Reference Include="System.Net">
       <Private>False</Private>
     </Reference>
+    <Reference Include="TomShane.Neoforce.Controls, Version=0.7.2407.1915, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Neoforce\Bin\TomShane.Neoforce.Controls.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="core\ShipComponent.cs" />
