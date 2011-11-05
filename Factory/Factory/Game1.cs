@@ -25,9 +25,26 @@ namespace Factory
 
         //botões
         Button btEncerrar;
+        //
+        Button btProx;//próxima estrutura
+        Button btAnt;//estrutura anterior
+        Button btInserir; //inserir estrutura
 
+        Button btOrdenarAcima;
+        Button btOrdenarAbaixo;
+
+        GroupBox gbEstrutura;
+        RadioButton rbArma;
+        RadioButton rbMotor;
+        RadioButton rbEstrutura;
+
+        CheckBox cbFlipVertical;
+        CheckBox cbFlipHorizontal;
+        CheckBox cbAnimado;
+        CheckBox cbXfixo;
+        CheckBox cbYfixo;
+        
         ShipComponent testComponent;
-
 
         public Game1()
         {
@@ -70,6 +87,12 @@ namespace Factory
             btEncerrar.SetPosition(600, 500);
             btEncerrar.Text = "Encerrar";
             managerGUI.Add(btEncerrar);
+
+            gbEstrutura = new GroupBox(managerGUI);
+            gbEstrutura.SetPosition(600, 10);
+            gbEstrutura.SetSize(300, 500);
+            gbEstrutura.Text = "Opções da Estrutura";
+            managerGUI.Add(gbEstrutura);
 
             testComponent = new ShipComponent(this, tex);
             testComponent.Initialize();

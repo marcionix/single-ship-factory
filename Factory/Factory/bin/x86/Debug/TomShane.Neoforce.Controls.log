@@ -92,3 +92,17 @@ Assembly: TomShane.Neoforce.Controls.dll
    at Factory.Program.Main(String[] args) in G:\Unidade E\Project1\Factory\Factory\Factory\Program.cs:line 16
 ////////////////////////////////////////////////////////////////
 
+////////////////////////////////////////////////////////////////
+    Date: 04/11/2011 19:23:40
+Assembly: TomShane.Neoforce.Controls.dll
+ Version: 0.7.2407.1915
+ Message: Object reference not set to an instance of an object.
+////////////////////////////////////////////////////////////////
+   at Factory.Game1.LoadContent() in G:\Unidade E\Project1\Factory\Factory\Factory\Game1.cs:line 79
+   at Microsoft.Xna.Framework.Game.Initialize()
+   at Factory.Game1.Initialize() in G:\Unidade E\Project1\Factory\Factory\Factory\Game1.cs:line 59
+   at Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   at Microsoft.Xna.Framework.Game.Run()
+   at Factory.Program.Main(String[] args) in G:\Unidade E\Project1\Factory\Factory\Factory\Program.cs:line 16
+////////////////////////////////////////////////////////////////
+
